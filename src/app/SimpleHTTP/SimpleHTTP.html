@@ -1,0 +1,9 @@
+<h2>Basic Request</h2>
+<button type="button" (click)="makeRequest()">Make Request</button>
+<div *ngIf="loading">loading...</div>
+<pre>{{data | json}}
+
+</pre>
+<ul>
+	<li *ngFor="let category of categoryList">{{category.id}} {{category.name}}</li>
+</ul>
